@@ -3,6 +3,8 @@
 
 This repo is built by an amateur(me) to document my learning journey facilitated by the Heliophysics program at ISA. If you want to recommend any changes, please do so by making an issue. All constructive feedback is greatly appreciated.
 
+![ISA Banner](assets/ISA.webp)
+
 ---
 
 ## Expectations & Deliverables
