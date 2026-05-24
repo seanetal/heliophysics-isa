@@ -1,6 +1,8 @@
 
 # Amateur's Heliophysics Wiki
 
+![ISA Banner](assets/ISA.webp)
+
 This repo is built by an amateur(me) to document my learning journey facilitated by the Heliophysics program at ISA. If you want to recommend any changes, please do so by making an issue. All constructive feedback is greatly appreciated.
 
 ![ISA Banner](assets/ISA.webp)
@@ -20,16 +22,17 @@ The program is structured into two distinct phases:
 ## Prequisites
 
 1. You must have access to the [ISA LMS Portal](https://isa.internship.indiaspaceweek.org/lms/ "LMS Link") with the credentials that have been provided by the ISA Team. There are two required fields - Email & Enrollment Number. Email is the one that you used to register for the workshop. If you don't happen to know your enrollment number, you can find it here at this particular link: [Find your Enrollment Number]()
-2. You must have registered and verified your account on the [Pradan Portal](https://pradan1.issdc.gov.in/al1/). Click on Access data. Further, click on register, and fill in valid details about yourself and your other credentials. In lack of a better username use heliophysics-[your name]. Category can be put as student, designation could be intern or research student and area of expertise can be left to the reader's choice
-3. A computer/laptop with [Python 3.11](https://www.python.org/downloads/release/python-3145/) or newer and a few important packages like `<span>Astropy</span>`,`<span>solarpy</span>` and `<span>Sunpy</span>`. All other related dependencies can be installed based on the reader's choice. You will almost certainly want `<span>numpy</span>` for high-performance matrix math, `<span>matplotlib</span>` or `<span>seaborn</span>` for plotting solar graphs, and `<span>pandas</span>` for organizing timeseries data. Install them via your terminal:
+2. You must have registered and verified your account on the [Pradan Portal](https://pradan1.issdc.gov.in/al1/). Click on Access data. Further, click on register, and fill in valid details about yourself and your other credentials. In lack of a better username use `heliophysics-[your-name]`. Category can be put as `student`, designation could be `intern` or `research student` and area of expertise can be left to the reader's choice.
+3. A computer/laptop with [Python 3.11](https://www.python.org/downloads/release/python-3145/) or newer and a few important packages like `Astropy`, `solarpy` and `SunPy`. All other related dependencies can be installed based on the reader's choice. You will almost certainly want `numpy` for high-performance matrix math, `matplotlib` or `seaborn` for plotting solar graphs, and `pandas` for organizing timeseries data. Install them via your terminal:
 
-```
+```bash
 pip install astropy sunpy solarpy numpy matplotlib pandas
 ```
 
-4. While the above packages, will help you with most of your applicational work in Heliophysics and help you with handling FITS files, calculating solar radiation or geometry, there are still some topics that require specialized packages. For analyzing CMEs and Solar Flares you need, the PlasmaPy open-source package for analyzing the ASPEX and MAG data from the Aditya L1 Payload.
-5. For time series data on magnetic field variation and other physical quantities, we use `<span>pySPEDAS</span>` and a general package for parsing and post-processing satellite data is `<span>pysat</span>`. For managing coordinate geometry, and changing coordinates based on the geo-centric, solar or spacecraft's frame of reference, you can use `<span>SpacePy.</span>`
-   Note: For the most part you won't need all of these packages, only a select few.
+4. While the above packages will help you with most of your applicational work in Heliophysics and help you with handling FITS files, calculating solar radiation or geometry, there are still some topics that require specialized packages. For analyzing CMEs and Solar Flares you need the `PlasmaPy` open-source package for analyzing the ASPEX and MAG data from the Aditya L1 Payload.
+5. For time series data on magnetic field variation and other physical quantities, we use `pySPEDAS` and a general package for parsing and post-processing satellite data is `pysat`. For managing coordinate geometry and changing coordinates based on the geo-centric, solar or spacecraft's frame of reference, you can use `SpacePy`.
+
+> Note: For the most part you won't need all of these packages, only a select few. Choose accordingly.
 
 ---
 
@@ -55,9 +58,9 @@ This table will be updated each day. The transcripts will be made available as s
 
 ## Material
 
-I do personally care about having a strong foundation in subject of astrophysics and astronomy, to perform better, but I feel for most of us the required pre-requisites would be all over the place, and to carry out a methodical meticulously planned study regimen will be time taking and not yield the kind of fruits we desire. I refer to the book - An Introduction to Modern Astrophysics by Oxford (Edition 2). You can find this on Z-Lib or Anna's archive. [I have linked it here.](#)  This book gives you a very elaborate introduction to all of modern astrophysics and astronomy. But one must not forget this book is heavy on theory. I myself have not finished the whole book, but I do keep cross-referencing it whenever I want to understand something. This book also doesn't shy away from covering the underlying mathematics and most of it is around the Undergraduate Level.
+I do personally care about having a strong foundation in subject of astrophysics and astronomy, to perform better, but I feel for most of us the required pre-requisites would be all over the place, and to carry out a methodical meticulously planned study regimen will be time taking and not yield the kind of fruits we desire. I refer to the book - [An Introduction to Modern Astrophysics by Oxford (Edition 2)](https://github.com/seanetal/heliophysics-isa/blob/main/books/An%20Introduction%20to%20Modern%20Astrophysics%2C%202nd%20edition%20(Bradley%20W.%20Carroll%2C%20Dale%20A%20.%20Ostlie).pdf). You can find this on Z-Lib or Anna's archive. [I have linked it here.](#https://github.com/seanetal/heliophysics-isa/blob/main/books/An%20Introduction%20to%20Modern%20Astrophysics%2C%202nd%20edition%20(Bradley%20W.%20Carroll%2C%20Dale%20A%20.%20Ostlie).pdf)  This book gives you a very elaborate introduction to all of modern astrophysics and astronomy. But one must not forget this book is heavy on theory. I myself have not finished the whole book, but I do keep cross-referencing it whenever I want to understand something. This book also doesn't shy away from covering the underlying mathematics and most of it is around the Undergraduate Level.
 
-Now that we spoke about theory, for actually understanding how we apply astrophysics, using human-made hardware and software, I have started reading [Astrophysical Techniques by CR Kitchin](@). This is a very in-depth guide on how we detect, image, profile things related to celestiabl bodies and other astrophysical phenomenon. I aim to finish this cover to cover by the term our project phase begins. This doesn't have a lot of implementation per se, but it sets you up for a solid foundation to full understand why we do things a certain way. I find this book to be very dense, and I do think it will take a while for most to finish this.
+Now that we spoke about theory, for actually understanding how we apply astrophysics, using human-made hardware and software, I have started reading [Astrophysical Techniques by CR Kitchin](https://github.com/seanetal/heliophysics-isa/blob/main/books/Astrophysical%20Techniques%20(C.R.%20Kitchin).pdf). This is a very in-depth guide on how we detect, image, profile things related to celestiabl bodies and other astrophysical phenomenon. I aim to finish this cover to cover by the term our project phase begins. This doesn't have a lot of implementation per se, but it sets you up for a solid foundation to full understand why we do things a certain way. I find this book to be very dense, and I do think it will take a while for most to finish this.
 
 A digital course I am studying parallely to finally study and apply computational techniques to existing data is provided by Imad Pasha and Marla Geha at: [Astro 330 Scientific Computing in Astrophysics](https://astro-330.github.io/intro.html)
 
